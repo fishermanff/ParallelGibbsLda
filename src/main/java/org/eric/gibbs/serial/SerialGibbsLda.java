@@ -219,7 +219,10 @@ public class SerialGibbsLda {
         DataBlock data = TextLoader.loadData("news.txt", M, "vocab_2w.txt");
         System.out.println("vocab size " + data.V);
         SerialGibbsLda gibbsLda = new SerialGibbsLda(data.documents, data.V);
+        long t0 = System.currentTimeMillis();
         gibbsLda.gibbsSampling(K,2,0.5,200);
+        System.out.println("training process cost " +
+                (System.currentTimeMillis()-t0)/1000 + "s");
         System.out.println("after training, the perplexity is " +
                 String.format("%.4f", gibbsLda.perplexity()));
         String[] topicWords = Displayer.topicWordMat(gibbsLda.phi, 10, data.id2word);
