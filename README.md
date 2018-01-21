@@ -1,11 +1,10 @@
 ## ParallelGibbsLda  
-LDA（Latent Dirichlet Allocation）由Blei于2003年提出，是机器学习中一种重要的隐变量挖掘模型（topic model），目前被广泛应用于文本挖掘、社交分析、计算广告等领域；  
-LDA的数学推导十分复杂，但基于Gibbs Sampling的工程实现却相对简单，作者在实习期间首次接触topic model，深感其中数学与工程之美；  
+LDA（Latent Dirichlet Allocation）由Blei于2003年提出，是机器学习中一种重要的隐变量挖掘模型（topic model），目前被广泛应用于文本挖掘、社交分析、计算广告等领域。LDA的数学推导十分复杂，但基于Gibbs Sampling的工程实现却相对简单，作者在实习期间首次接触topic model，深感其中数学与工程之美。
 
 ***
 训练语料来源于某站点新闻资讯频道，由于未获授权，本项目仅抽取少量的2000篇新闻文本做测试；  
 resource目录下的语料已预先进行分词、去停用词；另外，将低频噪声词过滤掉会显著提升模型perplexity；  
-因此，resource目录下同时包含一份训练语料中的高频词
+因此，resource目录下同时包含一份训练语料中的高频词；
 ***
 
 项目由两部分组成，第一部分实现传统单线程Gibbs采样，第二部分实现AD-LDA并行Gibbs采样
