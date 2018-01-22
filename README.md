@@ -53,7 +53,8 @@ resource目录下的语料已预先进行分词、去停用词；另外，将低
     Hyperparameters： K=30，alpha=2.0，beta=0.5，iter=200，threads=5； 
 
 	training process cost 41s
-	after training, the corpus perplexity is 724.8136
+	after training, the corpus perplexity is 724.8136  
+	topic-word martrix：  
 	topic 0 >>> 停电:0.0557 街道:0.0331 时间:0.0263 小区:0.0158 电话:0.0151 社区:0.0148 花园:0.0142 研发:0.0141 武汉:0.0113 地址:0.0112
 	topic 1 >>> 影视:0.0112 魅力:0.0088 客厅:0.0085 东方:0.0080 村民:0.0075 发酵:0.0063 过瘾:0.0058 没什么:0.0053 不错:0.0024 记住:0.0005
 	topic 2 >>> 电影:0.0634 美国:0.0341 国内:0.0219 作品:0.0173 照片:0.0168 导演:0.0155 拍摄:0.0143 故事:0.0142 演员:0.0129 角色:0.0113

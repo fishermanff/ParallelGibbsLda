@@ -181,11 +181,6 @@ public class ParallelGibbsLda {
         }
         System.out.println("Gibbs sampling off");
         executor.shutdownNow();
-        try {
-            TimeUnit.SECONDS.sleep(1);
-        }catch (InterruptedException e){
-            e.printStackTrace();
-        }
         // store theta and phi matrix after estimation
         theta = calcThetaMatrix();
         phi = calcPhiMatrix();
