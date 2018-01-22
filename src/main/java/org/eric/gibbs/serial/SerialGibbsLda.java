@@ -209,6 +209,7 @@ public class SerialGibbsLda {
     }
 
     public double[] infer(int[] document){
+        // todo
         double[] theta = new double[document.length];
         return theta;
     }
@@ -223,7 +224,7 @@ public class SerialGibbsLda {
         gibbsLda.gibbsSampling(K,2,0.5,200);
         System.out.println("training process cost " +
                 (System.currentTimeMillis()-t0)/1000 + "s");
-        System.out.println("after training, the perplexity is " +
+        System.out.println("after training, the corpus perplexity is " +
                 String.format("%.4f", gibbsLda.perplexity()));
         String[] topicWords = Displayer.topicWordMat(gibbsLda.phi, 10, data.id2word);
         for(String str: topicWords)
