@@ -103,3 +103,4 @@ __多线程 - 84s__
 * Gregor Heinrich. Parameter Estimation for Text Analysis
 * Newman, David, et al. Distributed Inference for Latent Dirichlet Allocation
 * Rick Jin. LDA数学八卦
+* Xuemin Zhao, Lifeng Wang, et al. Peacock：大规模主题模型及其在腾讯业务中的应用
