@@ -91,8 +91,8 @@ resource目录下的语料已预先进行分词、去停用词；另外，将低
 
 
 ***
-将数据集增大10倍（2w份文本），线程数为5，迭代100轮耗时：
-单线程 - 414s
+将数据集增大10倍（2w份文本），线程数为5，迭代100轮耗时：  
+单线程 - 414s  
 多线程 - __84s__
 ***
 
@@ -101,4 +101,3 @@ resource目录下的语料已预先进行分词、去停用词；另外，将低
 * Gregor Heinrich. Parameter Estimation for Text Analysis
 * Newman, David, et al. Distributed Inference for Latent Dirichlet Allocation
 * Rick Jin. LDA数学八卦
-* Gregor Heinrich. LdaGibbsSampler (A Java Implementation)
