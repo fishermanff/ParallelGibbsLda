@@ -10,11 +10,8 @@ public class GibbsWorker implements Runnable{
     private ParallelGibbsLda pGL;
     private int start;
     private int end;
-    int[][] nd;
-    int[] ndsum;
     int[][] nw;
     int[] nwsum;
-    int[][] z;
     LinkedBlockingQueue<Integer> blockingAllocate;
     LinkedBlockingQueue<Integer> blockingReduce;
 
